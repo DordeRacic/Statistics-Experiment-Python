@@ -20,12 +20,6 @@ for race in df.index:
     #Recording lap times for laps 2 to 7
 df_selected_lap_times = pd.DataFrame({'Lap Times': selected_lap_times}) #Creating a date frame for the times  
 print(df_selected_lap_times)
-plt.hist(df_selected_lap_times['Lap Times'], bins = 5)
-plt.xlabel('Lap time')
-plt.ylabel('Frequency')
-plt.title('Distribution of Lap Times for All Races')
-plt.grid(True)
-plt.show()
 
 #Join different arrays from the DataFrame into a single axis
 #Numpy methods do not function with pandas DataFrames
